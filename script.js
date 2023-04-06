@@ -11,7 +11,7 @@ function calculate() {
   const compound = 1 + rate / periods;
   const n = periods * years;
   const total = initial * Math.pow(compound, n);
-  
+
   // Calculamos la ganancia de intereses
   const interestTotal = total - initial;
 

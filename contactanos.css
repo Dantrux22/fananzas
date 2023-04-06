@@ -1,7 +1,7 @@
 
-* {	
-	font-family: sans-serif;
-		line-height: 1 }
+body {
+    background-color: #f5f5f5;
+  }
 body {
 	background:
 	linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
@@ -9,7 +9,6 @@ body {
 	linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
 	#444;
 	background-size: 16px 48px;
-    padding-top: 45px;
 }
 .nav-navegador {
     background-color: #333;
@@ -17,6 +16,7 @@ body {
     left: 0;
     right: 0;
     z-index: 100;
+    margin-bottom: 10px;
   }
   nav ul {
     list-style: none;
@@ -24,11 +24,9 @@ body {
     padding: 0;
     text-align: center;
   }
-  
   nav li {
     display: inline-block;
   }
-  
   nav li a {
     font-size: 16px;
     font-weight: bold;
@@ -38,11 +36,9 @@ body {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
-  
   nav li a:hover {
     background-color: #111;
   }
-
 .flex-container {
     display: flex;
     align-items:center;
@@ -50,10 +46,12 @@ body {
     justify-content: center;
     background: #444;
     border: 3px solid #1f5;   
-    margin: 50px;
+    height: 100%;
+    width: 95%;
+    margin: auto;
 }
 .form {
-    min-width: 400px;
+    width: 400px;
     flex: 1;
     text-align: center;
     padding: 30px;
@@ -78,11 +76,10 @@ form textarea {
     resize: none;
 }  
 .form-img {
-    flex: 1;
     display: flex;
     padding: 10px;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 200px;
+    max-width: 300px;
     order: 1 ;
 }
 .form-img div {
@@ -106,8 +103,7 @@ form textarea {
 .form input[type="submit"]:active {
     background: linear-gradient(to bottom, #072, #072);
 }
-
-            
+         
 
         
         

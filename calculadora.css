@@ -1,24 +1,23 @@
 body {
-  background-color: #f5f5f5;
-}
-  
-  .nav-navegador {
+    background-color: #f5f5f5;
+}     
+.nav-navegador {
     background-color: #333;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-  }
-  nav ul {
+}
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  nav li {
+}
+nav li {
     display: inline-block;
-  }
-  nav li a {
+}
+nav li a {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -26,22 +25,20 @@ body {
     padding: 15px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-  }
-  nav li a:hover {
+}
+nav li a:hover {
     background-color: #111;
-    }
-
-  .title {
+}
+  
+.title {
     display: flex;
    justify-content: center;
-   color:#333;  
-   font-size: 30px;
+   font-size: 20px;
   }
-  
-  form {
+form {
     margin: 20px auto;
-    height: 450px;
-    width: 400px;
+    height: 580px;
+    width: 100%;
     max-width: 100%;
     background-color: #fff;
     padding: 40px;
@@ -49,15 +46,13 @@ body {
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
   }
-
-  label {
+label {
     display: block;
     margin: 10px auto;
     font-size: 16px;
     font-weight: bold;
     color: #333;
   }
-  
 input {
   width: 100%;
   padding: 12px;
@@ -68,7 +63,17 @@ input {
   font-size: 16px;
   color: #333;
 }
-
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #333;
+}
 input[type="button"],
 input[type="reset"]   {
     display: inline-flex;
@@ -85,20 +90,18 @@ input[type="reset"]   {
     width: 40%;
     margin: 10px;
 }
-
-
 input[type="button"]:hover,
 input[type="reset"]:hover{
   background-color: #2d662f;
 }
-.volver { 
+.info { 
   display: flex;
   justify-content: center;
   text-decoration: none;
   color: #333;
   margin-top: 20px;
 }
-.volver:hover {
+.info:hover {
   text-decoration:underline;
 } 
 #result {
@@ -130,6 +133,3 @@ input[type="reset"]:hover{
   height: 100%;
   justify-content: center;
   }
-
-
-
