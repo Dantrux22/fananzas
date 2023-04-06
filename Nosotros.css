@@ -51,48 +51,11 @@ a {text-decoration: none;}
   nav li a:hover {
 	background-color: #111;
   }
-/*gfgfg*/
+/*contenido*/
 
-.img2 {
-	border-radius: 20px;
-	height: 40px;
-	margin-right: 20px;
-	border: 2.5px solid white;
-	}
-.text {
-	padding: 60px;
-	margin: auto;
-	text-align: justify;
-}	
-.text::first-letter {
-	color: violet;
-	font-size: 4em;
-	margin-left: 30px;
-	margin-right: 10px;
+p{
+	margin: 10px;
 }
-
-.buscador{
-	margin: 100px auto;
-	display: block;
-	background-color: gray;
-	padding: 5px;
-	width: 60%;
-	border-radius: 20px;
-}
-.buscador-1 {
-	padding: 6px;
-	width: 100%;
-	border-radius: 15px;
-}
-.buscador-1::placeholder {
-	color: violet;
-}
-h1{
-	text-align: center;
-}	
- 
-
-
 
 
 
