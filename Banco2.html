@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de inversión</title>
+    <link rel="stylesheet" href="banco2.css" />
+    <link rel="stylesheet" href="/normalize.css" />
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <nav class="nav-navegador">
+      <ul>
+        <li>
+          <a href="/Inicio.html"><b>Inicio</b></a>
+        </li>
+        <li>
+          <a href="/Nosotros.html"><b>Nosotros</b></a>
+        </li>
+        <li>
+          <a href="/Calculadora de Interés Compuesto/Banco.html">Banco</a>
+        </li>
+        <li><a href="/contactanos.html">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--TITULO-->
+    <h1 class="title">¿Dólar o plazo fijo?</h1>
+
+    <!--INPUTS-->
+    <form>
+      <label class="label" for="tasaInteres">Tasa de interés mensual:</label>
+      <input
+        type="number"
+        id="tasaInteres"
+        name="tasaInteres"
+        required
+        step="any"
+      />
+
+      <label class="label" for="cantMeses">Cantidad de meses:</label>
+      <input
+        type="number"
+        id="cantMeses"
+        name="cantMeses"
+        required
+        step="any"
+      />
+
+      <label class="label" for="precioDolar">Precio del dólar actual:</label>
+      <input
+        type="number"
+        id="precioDolar"
+        name="precioDolar"
+        required
+        step="any"
+      />
+      <br />
+
+      <input type="button" value="Calcular" onclick="calcularPrecioDolar()" />
+      <input type="reset" value="Borrar" />
+
+      <a class="volver" href="/Calculadora de Interés Compuesto/Banco.html"
+        >Volver</a
+      >
+    </form>
+
+    <div id="result">
+      <h3 class="resultado">Resultado:</h3>
+    </div>
+    <p class="nota">
+      Nota: El precio especulativo es una estimación teórica del valor del dólar
+      al final de un plazo fijo, basado en proyecciones y análisis de factores
+      macro económicos y de me rcado. Sirve para estimar la rentabilidad de una
+      inversión en plazo fijo en función del valor del dólar al momento de su
+      finalización. Es importante tener en cuenta que el precio especulativo no
+      es una garantía de rentabilidad y que el valor del dólar puede ser
+      influenciado por diversos factores. Para que el plazo fijo sea rentable el
+      balor del dolar tiene que se mayo igual que el numero mostrado arriba
+      (resultado)
+    </p>
+
+    <!-- JAVASCRIP-->
+    <script>
+      function calcularPrecioDolar() {
+        let tasaInteres =
+          parseFloat(document.getElementById("tasaInteres").value) / 100; // Convertir a decimal
+        let cantMeses = parseFloat(document.getElementById("cantMeses").value);
+        let precioDolar = parseFloat(
+          document.getElementById("precioDolar").value
+        );
+
+        let precioFinalDolar = (1 + tasaInteres) ** cantMeses * precioDolar;
+
+        let resultado = document.getElementById("result");
+        resultado.innerHTML =
+          "precio del dolar: $" + precioFinalDolar.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
