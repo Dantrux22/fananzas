@@ -47,7 +47,7 @@ body {
     background: #444;
     border: 3px solid #1f5;   
     height: 100%;
-    width: 95%;
+    max-width: 60%;
     margin: auto;
 }
 .form {
