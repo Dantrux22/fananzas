@@ -5,10 +5,6 @@
     <link rel="icon" href="foto/seleccion.ico" />
     <link rel="stylesheet" type="text/css" href="contactanos.css" />
     <link rel="stylesheet" href="normalize.css" />
-   <script src="script.js"></script>
-    <scriptsrc="https://kit.fontawesome.com/7d6ec1fd48.js"
-      crossorigin="anonymous"
-    ></scriptsrc=>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -22,28 +18,43 @@
     </nav>
 
     <div class="flex-container">
-      <form class="form">
+
+      <form action="https://formsubmit.co/dantrux22@gmail.com" method="POST" class="form" id="contact-form">
+
         <div class="form__section">
-          <input type="text" class="form__input" placeholder="Nombre" />
+          <input type="text"class="form__input" placeholder="Nombre" name="Nombre" required />
         </div>
         <div class="form__section">
-          <input type="text" class="form__input" placeholder="Apellido" />
+          <input type="text" class="form__input" placeholder="Apellido" name="Apellido" required />
         </div>
         <div class="form__section">
-          <input type="email" class="form__input" placeholder="Gmail" />
+          <input type="email" class="form__input" placeholder="Gmail" name="Gmail" required />
         </div>
         <div class="form__section">
-          <textarea
-            class="form__input"
-            placeholder="Escriba su mensaje"
-          ></textarea>
+          <textarea class="form__input" placeholder="Escriba su mensaje" name="mensaje" required></textarea>
         </div>
         <div class="form__section">
-          <input type="submit" class="form__input" />
+          <input type="submit" value="Enviar" class="form__input" />
         </div>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
+
       </form>
       <div class="form-img">
         <img src="gmail.png" />
       </div>
+    </div>
+
+    <script>
+      const form = document.querySelector('#contact-form');
+      form.addEventListener('submit', (event) => {
+        const requiredFields = form.querySelectorAll('[required]');
+        const isFormValid = [...requiredFields].every((field) => field.value.trim() !== '');
+        if (!isFormValid) {
+          event.preventDefault();
+          alert('Por favor, complete todos los campos requeridos');
+        }
+      });
+    </script>
   </body>
 </html>
