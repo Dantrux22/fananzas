@@ -43,5 +43,12 @@ nav li a:hover {
  }
  .definicion {
   font-size: 20px;
-  margin: 5px;
+  margin: 10px;
+ }
+ .cont {
+ position: absolute;
+  text-decoration: none;
+  color:#333;
+  font-size: 9px;
+  left: 0;
  }
