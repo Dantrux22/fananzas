@@ -1,7 +1,7 @@
 body {
 	background-image: url('fonto\ pantalla.png');
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed; /* Fija la imagen de fondo */
   }
@@ -113,10 +113,33 @@ h4 b {
 p{
 	color: #fff;
 	letter-spacing: 1px;
-
+	font-weight:unset;
+	font-size: 16px;
 }
 
-
+@media screen and (min-width: 550px) {
+	
+	.div-container {
+	  width: 80%;
+	  height: 80%;
+	}
+	
+	p {
+	  font-size: 17px; /* Agrega "px" al valor de font-size */
+	  letter-spacing: 1.5px;
+	}
+	
+	.nombre {
+	  margin-bottom: 10px;
+	  font-weight: bold;
+	  font-size: 20px;
+	}
+	
+	img {
+	  height: 250px;
+	  width: 250px;
+	}
+  }
 
 
 
