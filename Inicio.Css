@@ -31,7 +31,7 @@ nav li a {
 nav li a:hover {
 	background-color: #111;
   }
-  /* contenido pagina */
+  /* contenido */
 
  .title{ 
   margin-top: 70px;
@@ -45,3 +45,36 @@ nav li a:hover {
   font-size: 20px;
   margin: 10px;
  }
+ /* pie de pagina s- Redes */
+h3{
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.container{
+  background-color: rgba(22, 20, 20, 1); /* Fondo semitransparente */
+  height: 400px;
+  width: 100% ;
+  bottom: 0;
+  text-align: left;
+  padding-left: 40px;
+
+}
+.container-1 {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 30px;
+  padding-bottom: 40px;
+}
+i{
+  padding-right:20px;
+  font-size: 20px;
+  transform: translateY(14px);
+}
+.container-2 {
+  color: #a79393;
+  margin-left: 65px;
+  margin-top: -35px;
+}
