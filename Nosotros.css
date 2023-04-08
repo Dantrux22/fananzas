@@ -1,8 +1,6 @@
 body {
 	background-image: url('fonto\ pantalla.png');
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
 	background-attachment: fixed; /* Fija la imagen de fondo */
   }
 /* Barra Navegacion */
@@ -119,4 +117,3 @@ p{
 	  width: 250px;
 	}
   }
-
