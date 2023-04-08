@@ -1,3 +1,4 @@
+
 body {
     background-color: #f5f5f5;
   }
@@ -42,12 +43,11 @@ body {
 .flex-container {
     display: flex;
     align-items:center;
-    flex-wrap: wrap;
     justify-content: center;
     background: #444;
     border: 3px solid #1f5;   
     height: 100%;
-    max-width: 60%;
+    width: 90%;
     margin: auto;
 }
 .form {
@@ -76,7 +76,7 @@ form textarea {
     resize: none;
 }  
 .form-img {
-    display: flex;
+    margin: auto;
     padding: 10px;
     min-width: 200px;
     max-width: 300px;
@@ -103,12 +103,20 @@ form textarea {
 .form input[type="submit"]:active {
     background: linear-gradient(to bottom, #072, #072);
 }
-         
-
+     
+@media screen and (min-width: 550px) {
+  .flex-container {
+    height: 600px;
+    width: 75%;
+  }
+  
+  form textarea {
+    min-height: 120px;
+    resize: none;
+  }
+}
+   
         
-        
-        
-
 
 
 
