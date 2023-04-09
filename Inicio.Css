@@ -69,8 +69,18 @@ body {
   font-family: 'Gowun Batang',Georgia,"Times New Roman",Times,serif;
   line-height: 1;
   font-weight: 400;
-  color: #333;
-    
+  color: #333; transform: translateX(-50px);
+  animation: aparecer-1 1s ease-in-out forwards;
+}
+@keyframes aparecer-1 {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 h1 samp {
   color: #7246e5;
@@ -142,6 +152,7 @@ img{
 /* OBJETIVO + CUADROS */
 .objetivo {
   padding-top: 30px;
+  background-color: rgba(80, 73, 73, 0.3); /* Fondo semitransparente */
 }
 .title-ob{
   text-align: center;
@@ -155,6 +166,19 @@ img{
   height: 300px;
   margin-bottom: 45px;
   flex-wrap: wrap;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: aparecer 1s ease-in-out forwards;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .we-title {
   font-family:  monospace;
@@ -263,6 +287,8 @@ i{
       height: 550px;
     }
   }
+
+
 
 
 
