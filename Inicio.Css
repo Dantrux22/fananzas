@@ -1,6 +1,6 @@
 body {
-  background-color: #f5f5f5;
-}
+  background-color: #fff;
+  }   
 /* Barra Navegacion */
 .nav-navegador {
   position: fixed;
@@ -31,21 +31,129 @@ nav li a {
 nav li a:hover {
 	background-color: #111;
   }
-  /* contenido */
+  /* Bienvenidos */
 
- .title{ 
-  margin-top: 70px;
- } 
- .title-1 {
+.h1-Bienvenido {
+  text-align: center;
+  margin: 40px;
+  padding-top: 40px;
+  font-family: 'Gowun Batang',Georgia,"Times New Roman",Times,serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+    
+}
+h1 samp {
+  color: #7246e5;
+}
+
+img{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit:cover;
+  border: solid 1.5px #7246e5;
+  -webkit-box-shadow: 0.5px 0 9px 2px #dddddd;
+  -moz-box-shadow: 0.5px 0 9px 2px #dddddd;
+  box-shadow: 0.5px 0 9px 2px #dddddd;
+}
+.slideshow {
   display: flex;
-  font-size: 20px;
   justify-content: center;
- }
- .definicion {
-  font-size: 20px;
-  margin: 10px;
- }
- /* pie de pagina s- Redes */
+}
+#img1 {
+  position: absolute;
+}
+@keyframes slideshow {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slideshow img:first-child {
+  animation: slideshow 5s infinite;
+}
+
+
+
+.h3-cont{
+  color: #333;
+  font-family: Poppins,sans-serif;
+  text-align: center;
+  text-transform:initial;  
+  font-size: 25px;
+  margin: 40px;
+}
+
+/* OBJETIVO + CUADROS */
+.objetivo {
+  padding-top: 30px;
+}
+.title-ob{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.recuedro {
+  margin: auto;
+  border-radius: 1rem;
+  width: 90%;
+  height: 300px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+.we-title {
+  font-family:  monospace;
+  text-align: left;
+  margin-left: 30px;
+  padding-top: 30px;
+
+}
+.we-contenido{
+  color: #fff;
+  margin: 40px;
+  line-height: 2;
+  justify-content: space-between;
+}
+.recuedro:nth-child(2) {
+  background-color: rgb(65, 188, 139);
+ } 
+.recuedro:nth-child(3) {
+  background-color: rgb(141, 141, 56);
+} 
+.recuedro:nth-child(4) {
+  background-color: #5f44a5;
+}
+.recuedro:nth-child(5) {
+  background-color: rgb(145, 52, 145);
+}
+
+/* Redes */
 h3{
   color: #fff;
   padding-top: 20px;
@@ -77,4 +185,12 @@ i{
   color: #a79393;
   margin-left: 65px;
   margin-top: -35px;
+}
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .recuedro {
+    height: 400px;
+  }
+  .recuedro:nth-child(2) {
+    background-color: rgb(255, 0, 0); }
 }
