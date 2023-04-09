@@ -17,6 +17,7 @@ body {
     align-items: center;
     
     color:white;
+    z-index: 100;
   }
 .header .i {
   font-size: 20px;
