@@ -118,12 +118,11 @@ input[type="reset"]:hover{
   align-items: center;
  }
 .nota {
-  display: flex;
-  background-color: #b5b3b3;
-  margin: 20px;
-  padding: 50px;
-  font-size: 16px;
- }
+    display: flex;
+    background-color: #b5b3b3;
+    padding: 20px;
+    font-size: 25px;
+   }
 .resultado {
   display: flex;
   padding: 16px;
