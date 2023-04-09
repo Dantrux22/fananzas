@@ -1,27 +1,27 @@
 body {
-	background-image: url('fondo\ gris.jpg');
+	background-image: url('fondo-pantalla.jpg');
 	background-size: cover;
 	background-attachment: fixed; /* Fija la imagen de fondo */
-  }    
-
-  /* Barra de navegacion */
+  }
+/* Barra Navegacion */
 .nav-navegador {
     background-color: #333;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-}
-nav ul {
+    margin-bottom: 10px;
+  }
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-}
-nav li {
+  }
+  nav li {
     display: inline-block;
-}
-nav li a {
+  }
+  nav li a {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -29,119 +29,88 @@ nav li a {
     padding: 15px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-}
-nav li a:hover {
+  }
+  nav li a:hover {
     background-color: #111;
-}
-  /* Titulo */
-.title {
+  }
+
+.flex-container {
     display: flex;
-   justify-content: center;
-   font-size: 22px;
-  }
-  /* Cuadro */
-form {
-    margin: 20px auto;
-    height: 590px;
+    align-items:center;
+    justify-content: center;
+    background: #444;
+    border: 3px solid #1f5;   
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.form {
     width: 400px;
-    max-width: 100%;
-    background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-  }
-label {
-    display: block;
-    margin: 10px auto;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: rgba(22, 20, 20, 0.5); /* Fondo semitransparente */
-
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
 }
-input[type="number"],
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: rgba(57, 47, 47, .7); /* Fondo semitransparente */
-
-}
-input[type="button"],
-input[type="reset"]   {
-    display: inline-flex;
-    background-color: #4caf50;
-    color: #fff;
-    border-radius: 4px;
+.form__input { 
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
     border: none;
-    font-weight: bold;
-    justify-content: center; 
-    align-items: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 16px;
-    width: 40%;
-    margin: 10px;
+    border-bottom: 3px solid #1f5;
+    background: transparent;
+    color: #fff;
 }
-input[type="button"]:hover,
-input[type="reset"]:hover{
-  background-color: #2d662f;
+.form__input:focus {
+    background: linear-gradient(to bottom, transparent, #333);
+    outline: none;
+    border-bottom: 3px solid #5d9;
 }
-.info { 
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: #ffffff;
-  margin-top: 20px;
+form textarea {
+    min-height: 140px;
+    resize: none;
+}  
+.form-img {
+    margin: auto;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    order: 1 ;
 }
-.info:hover {
-  text-decoration:underline;
-} 
-/* Resultado del cuadro */
-#result {
-  display: grid;
-  background-color: #fff;
-  height:200px ;
-  width: 100%;
-  margin: auto;
-  border-radius: 8px;
-  border: #111 solid 2px;
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  justify-content: center;
-  align-items: center;
- }
-
- /* NOTA */
-.nota {
-  display: flex;
-  background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
-  padding: 20px;
-  font-size: 25px;
-  color: #fff;
- }
-.resultado {
-  display: flex;
-  padding: 16px;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+.form-img div {
+    padding: 10px;
+}
+.form-img img {
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+    background-color:#fff ;
+    border: 3px solid #1f5;
+}
+.form input[type="submit"]{
+    background-color: #1f5;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:focus {
+    background:#094 ;
+}
+.form input[type="submit"]:active {
+    background: linear-gradient(to bottom, #072, #072);
+}
+     
+@media screen and (min-width: 550px) {
+  .flex-container {
+    height: 600px;
+    width: 75%;
   }
+  
+  form textarea {
+    min-height: 120px;
+    resize: none;
+  }
+}
+   
+        
+        
+
+
