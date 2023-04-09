@@ -2,25 +2,26 @@ body {
 	background-image: url('fondo\ gris.jpg');
 	background-size: cover;
 	background-attachment: fixed; /* Fija la imagen de fondo */
-  }   
-  /* Barra de navegacion */ 
-  .nav-navegador {
+  }    
+
+  /* Barra de navegacion */
+.nav-navegador {
     background-color: #333;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-  }
-  nav ul {
+}
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  nav li {
+}
+nav li {
     display: inline-block;
-  }
-  nav li a {
+}
+nav li a {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -28,22 +29,20 @@ body {
     padding: 15px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-  }
-  nav li a:hover {
+}
+nav li a:hover {
     background-color: #111;
-    }
-
-     /* Titulo */
-  .title {
+}
+  /* Titulo */
+.title {
     display: flex;
    justify-content: center;
-   color:#333;  
-   font-size: 30px;
+   font-size: 22px;
   }
-    /* Cuadro */
-  form {
+  /* Cuadro */
+form {
     margin: 20px auto;
-    height: 450px;
+    height: 590px;
     width: 400px;
     max-width: 100%;
     background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
@@ -52,15 +51,13 @@ body {
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
   }
-
-  label {
+label {
     display: block;
     margin: 10px auto;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
   }
-  
 input {
   width: 100%;
   padding: 12px;
@@ -70,9 +67,22 @@ input {
   margin-bottom: 16px;
   font-size: 16px;
   color: #ffffff;
-    background-color: rgba(22, 20, 20, 0.5); /* Fondo semitransparente */
-}
+  background-color: rgba(22, 20, 20, 0.5); /* Fondo semitransparente */
 
+}
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(57, 47, 47, .7); /* Fondo semitransparente */
+
+}
 input[type="button"],
 input[type="reset"]   {
     display: inline-flex;
@@ -89,47 +99,45 @@ input[type="reset"]   {
     width: 40%;
     margin: 10px;
 }
-
-
 input[type="button"]:hover,
 input[type="reset"]:hover{
   background-color: #2d662f;
 }
-.volver { 
+.info { 
   display: flex;
   justify-content: center;
   text-decoration: none;
   color: #ffffff;
   margin-top: 20px;
 }
-.volver:hover {
+.info:hover {
   text-decoration:underline;
 } 
 /* Resultado del cuadro */
 #result {
-  display: flex;
-  background-color: #fff;
+  display: grid;
+  background-color: rgba(22, 20, 20, 0.8); /* Fondo semitransparente */
   height:200px ;
   width: 100%;
   margin: auto;
-  border-radius: 8px;
-  border: #111 solid 2px;
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  border: #54b944 solid 2px;
+  box-shadow: 0 10px 10px 10px rgba(222, 214, 214, 0.1);
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   justify-content: center;
   align-items: center;
  }
-  /* NOTA */
-.nota {
-    display: flex;
-    background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
-    padding: 20px;
-    font-size: 25px;
-    color: #fff;
-   }
 
+ /* NOTA */
+.nota {
+  display: flex;
+  background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
+  padding: 20px;
+  font-size: 25px;
+  color: #fff;
+ }
 .resultado {
   display: flex;
   padding: 16px;
@@ -137,6 +145,4 @@ input[type="reset"]:hover{
   height: 100%;
   justify-content: center;
   }
-
-
 
