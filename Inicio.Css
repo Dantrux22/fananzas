@@ -1,36 +1,64 @@
 body {
   background-color: #fff;
   }   
-/* Barra Navegacion */
-.nav-navegador {
-  position: fixed;
-  background-color: #333;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-nav li {
-  display: inline-block;
-}
-nav li a {
-  font-size: 16px;
-	font-weight: bold;
-	color: #fff;
-	display: block;
-	padding: 15px;
-	text-decoration: none;
-	transition: all 0.2s ease-in-out;
-}
-nav li a:hover {
-	background-color: #111;
+  * {
+    border: 0;
+  }  
+  /* Barra de navegacion */
+  .header{
+    position: fixed;
+    width:100%;
+    background-color: #333;
+    top: 0;
+  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    color:white;
   }
+.header .i {
+  font-size: 20px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+.header .nav{
+  margin: auto;
+}
+  .header .button{
+    background-color:#333; 
+    display: none;
+  }
+  .header .svg{
+    width:2em;
+    height:2em;
+    fill:white;
+  }
+  .header .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .header .li{
+    margin: 0 .5em;
+    list-style-type: none;
+  }
+  nav li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  nav li a:hover {
+    background-color: #111;
+    }
+
+  
   /* Bienvenidos */
 
 .h1-Bienvenido {
@@ -139,6 +167,7 @@ img{
   margin: 40px;
   line-height: 2;
   justify-content: space-between;
+  font-size: 20px;
 }
 .recuedro:nth-child(2) {
   background-color: rgb(65, 188, 139);
@@ -186,8 +215,49 @@ i{
   margin-left: 65px;
   margin-top: -35px;
 }
+
 /* Responsive */
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 600px) {
+
+  /* RESPONSIVE Barra de navegacion */
+  .header {
+   padding-right: 17px;
+   z-index: 100;
+  }
+  .header .button{
+    display: block;
+    cursor: pointer;
+  }
+  .header .nav{
+    width:100%;
+    /* display: none; */
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo{
+    /* display: block; */
+    height:50vh;
+    pointer-events: auto;
+  }
+  .header .ul{
+    flex-direction: column;
+  }
+  .header .li{
+    margin: 1rem;
+  }  
+}
   .recuedro {
     height: 400px;
   }
+
+
+
+
