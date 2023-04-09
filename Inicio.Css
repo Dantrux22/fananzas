@@ -191,8 +191,3 @@ i{
   .recuedro {
     height: 400px;
   }
- @media screen and (max-width: 400px) {
-  .recuedro {
-    height: 400px;
-  }
- }
