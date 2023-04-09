@@ -191,6 +191,8 @@ i{
   .recuedro {
     height: 400px;
   }
-  .recuedro:nth-child(2) {
-    background-color: rgb(255, 0, 0); }
-}
+ @media screen and (max-width: 400px) {
+  .recuedro {
+    height: 400px;
+  }
+ }
