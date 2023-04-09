@@ -282,7 +282,7 @@ i{
   .recuedro {
     height: 400px;
   }
-   @media screen and (max-width: 450px) {
+    @media screen and (max-width: 450px) {
     .recuedro {
       height: 550px;
     }
@@ -294,12 +294,12 @@ i{
   }
   @media screen and (max-width: 340px) {
     .recuedro {
-      height: 600px;
+      height: 650px;
     }
   }
   @media screen and (max-width: 320px) {
     .recuedro {
-      height: 650px;
+      height: 700px;
     }
   }
 
