@@ -282,11 +282,27 @@ i{
   .recuedro {
     height: 400px;
   }
-  @media screen and (max-width: 450px) {
+   @media screen and (max-width: 450px) {
     .recuedro {
       height: 550px;
     }
   }
+  @media screen and (max-width: 440px) {
+    .recuedro {
+      height: 600px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .recuedro {
+      height: 600px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .recuedro {
+      height: 650px;
+    }
+  }
+
 
 
 
