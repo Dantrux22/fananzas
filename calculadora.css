@@ -124,9 +124,8 @@ input[type="reset"]:hover{
 .nota {
   display: flex;
   background-color: #b5b3b3;
-  margin: 20px;
-  padding: 50px;
-  font-size: 16px;
+  padding: 20px;
+  font-size: 25px;
  }
 .resultado {
   display: flex;
