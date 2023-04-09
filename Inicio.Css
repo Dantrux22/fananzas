@@ -257,7 +257,11 @@ i{
   .recuedro {
     height: 400px;
   }
-
+ @media screen and (max-width: 455px) {
+    .recuedro {
+      height: 500px;
+    }
+  }
 
 
 
