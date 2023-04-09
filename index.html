@@ -14,15 +14,22 @@
 
   </head>
   <body>
-    <nav class="nav-navegador">
-      <ul>
-        <li><a href="index.html"><b>Inicio</b></a></li>
-        <li><a href="Nosotros.html"><b>Nosotros</b></a></li>
-        <li><a href="Calculadora.html"><b>Banco</b></a></li>
-        <li><a href="contactanos.html"><b>contactanos</b></a></li>
-      </ul>
-    </nav>
-    </div>
+ <header class="header">
+          <a href="#" class="i"><i class="fa-brands fa-dribbble" style="color: #ffffff;"></i></a>
+      <button class="button">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+      </button>
+      <nav class="nav">
+          <ul class="ul">
+              <li class="li"><a href="index.html" class="a">Inicio</a></li>
+              <li class="li"><a href="Nosotros.html" class="a">Nostros</a></li>
+              <li class="li"><a href="Calculadora.html" class="a">Banco</a></li>
+              <li class="li"><a href="contactanos.html" class="a">Contactanos</a></li>
+          </ul>
+      </nav>
+  </header>
 
     <section class="we-section">
       <h1 class="h1-Bienvenido">Bienvenidos al <samp>Futuro de las  finanzas</samp></h1> 
@@ -84,6 +91,16 @@
     <p class="container-2">Buenos Aires - Argentina</p>
   </div>
   </body>
+
+  <script>
+    /* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
+const button = document.querySelector('.button')
+const nav = document.querySelector('.nav')
+
+button.addEventListener('click', () => {
+    nav.classList.toggle('activo')
+})
+  </script>
 </html>
 
 
