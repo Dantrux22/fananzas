@@ -2,7 +2,8 @@ body {
 	background-image: url('fondo\ gris.jpg');
 	background-size: cover;
 	background-attachment: fixed; /* Fija la imagen de fondo */
-  }    
+  }   
+  /* Barra de navegacion */ 
   .nav-navegador {
     background-color: #333;
     top: 0;
@@ -32,19 +33,20 @@ body {
     background-color: #111;
     }
 
+     /* Titulo */
   .title {
     display: flex;
    justify-content: center;
    color:#333;  
    font-size: 30px;
   }
-  
+    /* Cuadro */
   form {
     margin: 20px auto;
     height: 450px;
     width: 400px;
     max-width: 100%;
-    background-color: #fff;
+    background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -56,7 +58,7 @@ body {
     margin: 10px auto;
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
   }
   
 input {
@@ -67,7 +69,8 @@ input {
   box-sizing: border-box;
   margin-bottom: 16px;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
+    background-color: rgba(22, 20, 20, 0.5); /* Fondo semitransparente */
 }
 
 input[type="button"],
@@ -96,12 +99,13 @@ input[type="reset"]:hover{
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   margin-top: 20px;
 }
 .volver:hover {
   text-decoration:underline;
 } 
+/* Resultado del cuadro */
 #result {
   display: flex;
   background-color: #fff;
@@ -117,12 +121,15 @@ input[type="reset"]:hover{
   justify-content: center;
   align-items: center;
  }
+  /* NOTA */
 .nota {
     display: flex;
-    background-color: #b5b3b3;
+    background-color: rgba(22, 20, 20, 0.7); /* Fondo semitransparente */
     padding: 20px;
     font-size: 25px;
+    color: #fff;
    }
+
 .resultado {
   display: flex;
   padding: 16px;
