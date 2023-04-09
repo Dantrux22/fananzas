@@ -164,7 +164,7 @@ img{
 }
 .we-contenido{
   color: #fff;
-  margin: 40px;
+  margin: 15px 50px;
   line-height: 2;
   justify-content: space-between;
   font-size: 20px;
@@ -257,11 +257,12 @@ i{
   .recuedro {
     height: 400px;
   }
- @media screen and (max-width: 455px) {
+  @media screen and (max-width: 450px) {
     .recuedro {
-      height: 500px;
+      height: 550px;
     }
   }
+
 
 
 
