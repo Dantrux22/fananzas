@@ -156,15 +156,16 @@ img{
 }
 .title-ob{
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   font-size: 40px;
 }
 .recuedro {
+  display: flex;
   margin: auto;
   border-radius: 1rem;
-  width: 90%;
+  width: 80%;
   height: 300px;
-  margin-bottom: 45px;
+  margin: 20px auto;
   flex-wrap: wrap;
   opacity: 0;
   transform: translateX(-50px);
@@ -184,7 +185,6 @@ to {
   font-family:  monospace;
   text-align: left;
   margin-left: 30px;
-  padding-top: 30px;
 
 }
 .we-contenido{
@@ -278,30 +278,28 @@ i{
   .header .li{
     margin: 1rem;
   }  
-}
-  .recuedro {
-    height: 400px;
   }
-    @media screen and (max-width: 450px) {
+  @media screen and (max-width: 710px) {
+    .recuedro {
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .recuedro {
+      height: 380px;
+    }
+  }
+  @media screen and (max-width: 517px) {
     .recuedro {
       height: 550px;
     }
   }
-  @media screen and (max-width: 440px) {
-    .recuedro {
-      height: 600px;
-    }
-  }
-  @media screen and (max-width: 340px) {
-    .recuedro {
-      height: 650px;
-    }
-  }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 383px) {
     .recuedro {
       height: 700px;
     }
   }
+
 
 
 
