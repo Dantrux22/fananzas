@@ -58,8 +58,6 @@ body {
   nav li a:hover {
     background-color: #111;
     }
-
-  
   /* Bienvenidos */
 
 .h1-Bienvenido {
@@ -133,13 +131,9 @@ img{
     opacity: 1;
   }
 }
-
 .slideshow img:first-child {
   animation: slideshow 5s infinite;
 }
-
-
-
 .h3-cont{
   color: #333;
   font-family: Poppins,sans-serif;
@@ -148,23 +142,20 @@ img{
   font-size: 25px;
   margin: 40px;
 }
-
 /* OBJETIVO + CUADROS */
 .objetivo {
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: rgba(80, 73, 73, 0.3); /* Fondo semitransparente */
 }
 .title-ob{
   text-align: center;
-  padding-bottom: 40px;
   font-size: 40px;
 }
 .recuedro {
-  display: flex;
   margin: auto;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 80%;
-  height: 300px;
+  height:1fr;
   margin: 20px auto;
   flex-wrap: wrap;
   opacity: 0;
@@ -256,7 +247,6 @@ i{
   }
   .header .nav{
     width:100%;
-    /* display: none; */
     height:0;
     pointer-events: none;
     overflow: hidden;
@@ -279,26 +269,9 @@ i{
     margin: 1rem;
   }  
   }
-  @media screen and (max-width: 710px) {
-    .recuedro {
-      height: 350px;
-    }
-  }
-  @media screen and (max-width: 560px) {
-    .recuedro {
-      height: 380px;
-    }
-  }
-  @media screen and (max-width: 517px) {
-    .recuedro {
-      height: 550px;
-    }
-  }
-  @media screen and (max-width: 383px) {
-    .recuedro {
-      height: 700px;
-    }
-  }
+  
+
+
 
 
 
