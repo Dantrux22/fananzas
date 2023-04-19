@@ -1,6 +1,6 @@
 body {
-	background-image: url('fondo\ gris.jpg');
-	background-size: cover;
+  background-image: url('fondo\ gris.jpg');
+	background-size:contain;
 	background-attachment: fixed; /* Fija la imagen de fondo */
   }   
   /* Barra de navegacion */ 
@@ -137,7 +137,3 @@ input[type="reset"]:hover{
   height: 100%;
   justify-content: center;
   }
-
-
-
-
