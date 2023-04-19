@@ -1,9 +1,7 @@
 body {
   background-color: #fff;
   }   
-  * {
-    border: 0;
-  }  
+   
   /* Barra de navegacion */
   .header{
     position: fixed;
@@ -30,6 +28,7 @@ body {
   .header .button{
     background-color:#333; 
     display: none;
+    border: 0;
   }
   .header .svg{
     width:2em;
@@ -43,7 +42,7 @@ body {
     align-items: center;
   }
   .header .li{
-    margin: 0 .5em;
+    margin: .5em;
     list-style-type: none;
   }
   nav li a {
@@ -273,6 +272,7 @@ i{
   }  
   }
   
+
 
 
 
