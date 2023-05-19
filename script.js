@@ -43,3 +43,4 @@ function calculate() {
   seccion.style.display = "Block";
 
 }
+

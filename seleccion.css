@@ -72,3 +72,10 @@ a:hover{
     background-color: #005585;
     color: #fff;
 }
+@media (min-width: 375px) {
+    nav li a {
+        font-size: .7rem;
+
+    }
+
+}

@@ -119,7 +119,10 @@ form textarea {
     background-color: #f30202;
   }
 }
+@media (min-width: 375px) {
+  nav li a {
+      font-size: 1.1rem;
+  }
+}
         
-        
-
-
+       

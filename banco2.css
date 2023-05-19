@@ -7,26 +7,26 @@
 
 body {
   background-color: #005585;
-}
+}   
 
-  /* Barra de navegacion */ 
-  .nav-navegador {
+  /* Barra de navegacion */
+.nav-navegador {
     background-color: #333;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-  }
-  nav ul {
+}
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  nav li {
+}
+nav li {
     display: inline-block;
-  }
-  nav li a {
+}
+nav li a {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -34,77 +34,80 @@ body {
     padding: 15px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-  }
-  nav li a:hover {
+}
+nav li a:hover {
     background-color: #111;
-    }
+}
+   /* Calculadora */
 
-/* CALCULADORA */
-.title {
-  margin-bottom: 10px;
-  text-align: center;
+   .title {
+    text-align: center;
 }
 
 h1 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-  /* CALCULADORA */
-
 form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  box-shadow: rgba(0, 0, 0, 0.77) 1px 7px 30px -10px;
-  background: rgb(254, 254, 254);
-  border-radius: 10px;
-  max-width: 650px;
-  padding: 32px 64px;
-  min-height: 520px;
-  min-width: 520px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.77) 1px 7px 30px -10px;
+    background: rgb(254, 254, 254);
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 32px 64px;
+    min-height: 600px;
+    min-width: 520px;
 }
 
 .div-form {
-  position: relative;
+    position: relative;
 }
 
-form div input, select {
-  border-radius: 6px;
-  border: 2px solid #b4a6a6;
-  background: transparent;
-  outline: none;
-  display: flex;
-  margin: 20px auto;
-  padding: 16px;
-  width: 90%;
+form div input,
+select {
+    border-radius: 6px;
+    border: 2px solid #b4a6a6;
+    background: transparent;
+    outline: none;
+    display: flex;
+    margin: 20px auto;
+    padding: 16px;
+    width: 90%;
 }
+
 .div-form label {
-  position: absolute;
-  transform: translateY(40%);
-  color: #111;
-  top: 0;
-  left: 35px;
-  font-size: 18px;
-  background-color: #ffffff;
+    position: absolute;
+    transform: translateY(40%);
+    color: #111;
+    top: 0;
+    left: 35px;
+    font-size: 18px;
+    background-color: #fff;
 }
+
 input[type="button"] {
-  background-color: #005585;
-  color: #fff;
-  font-size: 1.1rem;
-  border-radius: 6px;
-  margin: auto;
-  padding: 16px 8px;
-  width: 90%;
-  border: none;
+    background-color: #005585;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    margin: auto;
+    padding: 16px 8px;
+    width: 90%;
+    border: none;
 }
+
 input[type="button"]:hover {
-  background-color: #17435a;
+    background-color: #17435a;
 }
 /* SECCION CAFECITO */
+
 .cafecito {
   text-align: center;
   margin: 15px;
 }
+
 /* RESULTADO */
 .resultado {
   padding: 40px;
@@ -119,15 +122,15 @@ input[type="button"]:hover {
   background-color: #fff;
  }
  /* NOTA */
-.nota {
-  display: flex;
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px;
-  font-size: 1.1rem;
-  border-radius: 11px;
-  color: black;
- }
+ .nota {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.1rem;
+    border-radius: 11px;
+    color: black;
+   }
 
 
   /* RESPONSIVE */
@@ -160,13 +163,39 @@ input[type="button"]:hover {
           }
             
     }
-    @media (min-width: 375px) {
-      nav li a {
-          font-size: .7rem;
+
+    @media (min-width: 390px) {
+        .title, h4 {
+            margin-top: 10px;
+          text-align: center;
+        }
+        nav li a {
+            font-size: 1.1rem;
+        }
+  
+    form {
+        padding: 0;
+        margin: 0;
+    }
+    form div input, select{
+        width: 95%;
+    }
+    nav li a {
+            font-size: .8rem;
+  
+        }
+      }
+      @media (min-width: 370px) {
+        nav li a {
+            font-size: .7rem;
+        }
+        .title, h4 {
+            font-size:  .9rem;
+          text-align: center;
+        }
+        form {
+            padding: 0;
+            margin: 20px auto;
+        }
 
       }
-
-  }
-
-    
-
