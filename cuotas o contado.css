@@ -30,7 +30,7 @@ nav li {
 }
 
 nav li a {
-    font-size: 16px;
+	font-size: 1rem;
     font-weight: bold;
     color: #fff;
     display: block;
@@ -194,7 +194,7 @@ input[type="button"]:hover {
     
     /* RESPUESTA RESPONSIVE */
     
-    @media (min-width: 531px) {
+    @media (max-width: 531px) {
         .div-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -281,7 +281,7 @@ input[type="button"]:hover {
     }
     }
 
-    @media (min-width: 390px) {
+    @media (max-width: 390px) {
         .title, h4 {
             margin-top: 10px;
           text-align: center;
@@ -302,7 +302,7 @@ input[type="button"]:hover {
   
         }
       }
-      @media (min-width: 370px) {
+      @media (max-width: 370px) {
         nav li a {
             font-size: .7rem;
         }

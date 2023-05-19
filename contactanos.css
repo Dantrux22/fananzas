@@ -27,7 +27,7 @@ body {
     display: inline-block;
   }
   nav li a {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
     display: block;
@@ -103,7 +103,7 @@ form textarea {
     background: linear-gradient(to bottom, #072, #072);
 }
      
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
   .flex-container {
     height: 600px;
     width: 75%;
@@ -119,10 +119,10 @@ form textarea {
     background-color: #f30202;
   }
 }
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   nav li a {
       font-size: 1.1rem;
   }
 }
         
-       
+        
