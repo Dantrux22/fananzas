@@ -35,8 +35,11 @@ function calculate() {
 
   // Mostramos los resultados formateados en el HTML
   document.getElementById("result").innerHTML = `
-    <p>Ganancia Total: ${formatter.format(total)}</p>
-    <p>Intereses Generados: ${formatter.format(interestTotal)}</p>
+    <p>Ganancia Total: ${formatter.format(total)}</p><br>
+    <p>Intereses Generados: ${formatter.format(interestTotal)}</p><br>
     <p>Intereses Mensual: ${formatter.format(interestMonthly)}</p>
   `;
+  var seccion = document.getElementById("result");
+  seccion.style.display = "Block";
+
 }

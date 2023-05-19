@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
 	background-image: url('fondo-pantalla.jpg');
 	background-size: cover;
@@ -109,12 +114,12 @@ form textarea {
     resize: none;
   }
 }
-   
+ @media screen and (max-width: 360px) {
+	.nav-navegador {
+    background-color: #f30202;
+  }
+}
         
-        
-
-
-
         
 
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuotas o contado</title>
+    <link rel="stylesheet" href="cuotas o contado.css">
+    <link rel="icon" href="b-75-512.icon.webp">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="nav-navegador">
+        <ul>
+            <li><a class="nav-a" href="index.html"><b>Inicio</b></a></li>
+            <li><a class="nav-a" href="Nosotros.html"><b>Nosotros</b></a></li>
+            <li><a class="nav-a" href="Seleccion.html"><b>Calculadoras</b></a></li>
+            <li><a class="nav-a" href="contactanos.html"><b>Contactanos</b></a></li>
+        </ul>
+    </nav>
+
+<!-- CALCULADORA       -->
+<form>
+    <div class="title">
+        <h1>¿Cuotas o Contado?</h1>
+        <h4>Calculá si te conviene pagar en cuotas o de contado!</h4>
+    </div>
+    <a href='https://cafecito.app/dantenievas' class="cafecito" rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' /></a>
+
+    <div class="div-form">
+        <input type="number" id="precioContado" required>
+        <label for="precioContado">Ingresá precio al contado</label>
+    </div>
+
+    <div class="div-form">
+        <input type="number" id="precioCuotas" required>
+        <label for="precioCuotas">Ingresá el precio total en cuotas</label>
+    </div>
+
+    <div class="div-form">
+        <input type="number" id="inflacionMensual" required>
+        <label for="inflacionMensual">Inflación mensual estimada</label>
+    </div>
+    <div class="div-form">
+        <label for="cuotas">Cantidad de cuotas</label>
+        <select id="cuotas">
+            <option class="option" value="1">1</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="18">18</option>
+            <option value="24">24</option>
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+        </select>    
+    </div>
+    
+    <input type="button" value="Calcular" onclick="calcularCuotas()">
+</form>
+
+<!-- RESPUESTA -->
+<div class="respuesta" id="respuestaContainer">
+    <div id="respuesta" class="R-div"></div>
+
+    <div class="div-grid">
+        <div id="sumatoriaCuotas" class="R-div-1"></div>
+        <div id="tasaRecargo" class="R-div-1"></div>
+        <div id="montoCuota" class="R-div-1"></div>
+        <div id="inflacion" class="R-div-1"></div>
+    </div>
+    <div class="cuotasA">
+        <div id="cuotasAjustadas" class="cuotas"></div>
+    </div>
+</div>
+
+
+    <!-- JAVASCRIP -->
+      <script src="Cuotas o Contado"></script>
+</body>
+</html>        

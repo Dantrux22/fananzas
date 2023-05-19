@@ -5,52 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Dante Nievas" />
-    <title>Calculadora de interes compuesto</title>
-     <link rel="icon" href="b-75-512.icon.webp">
+    <title>Plazo Fijo</title>
+    <link rel="icon" href="b-75-512.icon.webp">
     <link rel="stylesheet" href="calculadora.css" />
-    <link rel="stylesheet" href="normalize.css" />
     <script src="script.js"></script>
 </head>
 <body>
+    <!--Barra de navegacion-->
     <nav class="nav-navegador">
         <ul>
           <li><a class="nav-a" href="index.html"><b>Inicio</b></a></li>
           <li><a class="nav-a" href="Nosotros.html"><b>Nosotros</b></a></li>
-          <li><a class="nav-a" href="#"><b>Banco</b></a></li>
+          <li><a class="nav-a" href="Seleccion.html"><b>Calculadoras</b></a></li>
           <li><a class="nav-a" href="contactanos.html"><b>contactanos</b></a></li>
         </ul>
       </nav>
       
-      <h1 class="title">Calculadora de Interés Compuesto</h1>
-      
+<!-- CALCULADORA       -->
       <form>
-        <label for="initial">Cantidad Inicial:</label>
-        <input type="number" id="initial" name="initial" required step="any" />
-  
-        <label for="interest">Tasa de Interés Anual (%):</label>
-        <input type="number" id="interest" name="interest" required step="any" />
-  
-        <label for="period">Período de Capitalización:</label>
-      <select id="period" name="period">
-        <option value="1">Anual</option>
-        <option value="5">Mensual</option>
-        <option value="7">Sin capitalización</option>
-      </select>
-        <br /><br />
-  
-        <label for="years">Años:</label>
-        <input type="number" id="years" name="years" required step="any" />
-  
-        <input type="button" value="Calcular" onclick="calculate()" />
-        <input type="reset" value="Borrar" />
-        <!-- Esta es una nota en HTML -->
-        <a class="info" href="Banco2.html">¿Dólar o plazo fijo?</a>
-      </form>
-      <div id="result">
-        <h3 class="resultado">Resultado:</h3>
+        <div class="title">
+          <h1> Plazo Fijo</h1>
+          <h4>Calculá el interes que tendra tu Plazo fijo!</h4>
       </div>
+
+      <a href='https://cafecito.app/dantenievas' class="cafecito" rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' /></a>
+
+      <div class="div-form">
+        <input type="number" id="initial" name="initial" required step="any" />
+        <label for="initial">Cantidad Inicial:</label>
+
+      </div>
+
+  
+      <div class="div-form">
+        <input type="number" id="interest" name="interest" required step="any" />
+        <label for="interest">Tasa de Interés Anual (%):</label>
+      </div>  
+
+  
+      <div class="div-form">
+        <label for="period">Período de Capitalización:</label>
+          <select id="period" name="period">
+          <option value="1">Anual</option>
+          <option value="5">Mensual</option>
+          <option value="7">Sin capitalización</option>
+        </select>
+      </div>
+
+      <div class="div-form">
+        <input type="number" id="years" name="years" required step="any" />
+        <label for="years">Años:</label>
+      </div>  
+  
+        <input type="button" value="Calcular" id="respuestaContainer" onclick="calculate()" />
+      </form>
+
+<!-- RESPUESTA -->
+
+      <div class="resultado" id="result"></div>
+
       <p class="nota">
-        Nota: Una calculadora de interés compuesto es una herramienta que te permite calcular cuánto dinero tendrás en el futuro si inviertes una cantidad inicial de dinero, durante una cantidad de años determinada, a una tasa anual de interés específica, y con un período de capitalización determinado (el tiempo en el que se renueva el plazo fijo para hacer el interés compuesto). La calculadora toma estos valores como entrada y te muestra cuánto dinero tendrás al final del período de inversión, teniendo en cuenta el interés compuesto generado en cada período de capitalización.
+     Una calculadora de interés compuesto es una herramienta que te permite calcular cuánto dinero tendrás en el futuro si inviertes una cantidad inicial de dinero, durante una cantidad de años determinada, a una tasa anual de interés específica, y con un período de capitalización determinado (el tiempo en el que se renueva el plazo fijo para hacer el interés compuesto). La calculadora toma estos valores como entrada y te muestra cuánto dinero tendrás al final del período de inversión, teniendo en cuenta el interés compuesto generado en cada período de capitalización.
       </p>
 </body>
 </html>

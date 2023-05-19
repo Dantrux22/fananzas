@@ -4,70 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Información de inversión</title>
+    <title>¿Dólar o plazo fijo?</title>
     <link rel="icon" href="b-75-512.icon.webp">
     <link rel="stylesheet" href="banco2.css" />
-    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
+
     <!--Barra de navegacion-->
     <nav class="nav-navegador">
       <ul>
         <li><a href="index.html"><b>Inicio</b></a></li>
         <li><a href="Nosotros.html"><b>Nosotros</b></a></li>
-        <li><a href="Calculadora.html">Banco</a></li>
+        <li><a href="Seleccion.html">Caluladoras</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
       </ul>
     </nav>
-    <!--TITULO-->
-    <h1 class="title">¿Dólar o plazo fijo?</h1>
 
-    <!--INPUTS-->
+    <!-- CALCULADORA -->
+
     <form>
-      <label class="label" for="tasaInteres">Tasa de interés mensual:</label>
-      <input
-        type="number"
-        id="tasaInteres"
-        name="tasaInteres"
-        required
-        step="any"
-      />
+      <h1 class="title">¿Dólar o plazo fijo?</h1>
+      <h5>Calculá si te conviene hacer plazo fijo o dolaizarte</h5>
 
-      <label class="label" for="cantMeses">Cantidad de meses:</label>
-      <input
-        type="number"
-        id="cantMeses"
-        name="cantMeses"
-        required
-        step="any"
-      />
+      <a href='https://cafecito.app/dantenievas' class="cafecito" rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' /></a>
 
-      <label class="label" for="precioDolar">Precio del dólar actual:</label>
-      <input
-        type="number"
-        id="precioDolar"
-        name="precioDolar"
-        required
-        step="any"
-      />
-      <br />
 
-      <input type="button" value="Calcular" onclick="calcularPrecioDolar()" />
-      <input type="reset" value="Borrar" />
+      <div class="div-form">
+        <input type="number" id="tasaInteres" name="tasaInteres" required step="any"/>
+        <label class="label" for="tasaInteres">Tasa de interés mensual:</label>
+      </div>
 
-      <a class="volver" href="Calculadora.html">Volver</a>
+      <div class="div-form">
+        <input type="number" id="cantMeses" name="cantMeses" required step="any"/>
+        <label class="label" for="cantMeses">Cantidad de meses:</label>
+      </div>
+
+      <div class="div-form">
+        <input type="number" id="precioDolar" name="precioDolar" required step="any"/>
+        <label class="label" for="precioDolar">Precio del dólar actual:</label>
+      </div>
+
+
+      <div class="div-form">
+        <input type="button" value="Calcular" onclick="calcularPrecioDolar()" />
+      </div>
+
     </form>
 
-    <div id="result">
-      <h3 class="resultado">Resultado:</h3>
-    </div>
-     <p class="nota">
-      Nota: El Precio Especulativo es una estimación teórica del valor del dólar al final de un plazo fijo. Esta estimación se basa en proyecciones y análisis de factores macroeconómicos y de mercado. Su objetivo principal es estimar la rentabilidad de una inversión en plazo fijo en función del valor del dólar en el momento de su finalización. <br>
+    <!-- RESULTADO -->
+
+    <div class="resultado" id="result"></div>
+    
+    <p class="nota">
+    El Precio Especulativo es una estimación teórica del valor del dólar al final de un plazo fijo. Esta estimación se basa en proyecciones y análisis de factores macroeconómicos y de mercado. Su objetivo principal es estimar la rentabilidad de una inversión en plazo fijo en función del valor del dólar en el momento de su finalización. <br>
 
 Es importante tener en cuenta que el Precio Especulativo no es una garantía de rentabilidad, ya que el valor del dólar puede verse influenciado por diversos factores. Por lo tanto, para que una inversión en plazo fijo sea rentable, el valor del dólar debe ser menor al número mostrado en el Resultado. <br>
 
 En resumen, el Precio Especulativo es una herramienta de análisis utilizada para estimar la rentabilidad de una inversión en plazo fijo. Sin embargo, no es una garantía de rentabilidad y el valor del dólar puede ser influenciado por factores externos. Por lo tanto, se recomienda utilizar esta estimación con precaución y siempre realizar un análisis completo de la situación económica y de mercado antes de tomar una decisión de inversión.
     </p>
+
     <!-- JAVASCRIP-->
     <script>
       function calcularPrecioDolar() {
@@ -83,6 +78,9 @@ En resumen, el Precio Especulativo es una herramienta de análisis utilizada par
         let resultado = document.getElementById("result");
         resultado.innerHTML =
           "precio del dolar: $" + precioFinalDolar.toFixed(2);
+          var seccion = document.getElementById("result");
+  seccion.style.display = "Block";
+
       }
     </script>
   </body>
