@@ -101,7 +101,8 @@ p{
 	font-size: 16px;
 }
 
-@media screen and (max-width: 550px) {
+/* Resposive tamaño minimo (Apartir de 550px va a tener las medidas de abajo) */
+@media screen and (min-width: 550px) {
 	
 	.div-container {
 	  width: 80%;

@@ -133,69 +133,64 @@
      }
   
   
-    /* RESPONSIVE */
-  
-        @media (max-width: 530px) {
-          body {
-              background-color: #fff;
-          }
-      
-          nav li a {
-              font-size: 80%;
-          }
-      
-          form {
-              width: 100%;
-              height: 100%;
-              box-sizing: border-box;
-              padding: 32px 2em 0px;
-              border-radius: 0px;
-              box-shadow: none;
-              min-width: 300px;
-          }
-          .nota {
-              background-color: #005585;
-              color: #fff;
-            }
-            .resultado {
-              background-color: #005585;
-              color: #fff;
-            }
-              
+   /* RESPONSIVE */
+
+   @media (max-width: 530px) {
+    body {
+        background-color: #fff;
+    }
+
+    nav li a {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 32px 2em 0px;
+        border-radius: 0px;
+        box-shadow: none;
+        min-width: 300px;
+    }
+    .nota {
+        background-color: #005585;
+        color: #fff;
       }
-  
-      @media (max-width: 390px) {
-          .title, h4 {
-              margin-top: 10px;
-            text-align: center;
-          }
-          nav li a {
-              font-size: 1.1rem;
-          }
-    
-      form {
-          padding: 0;
-          margin: 0;
+      .resultado {
+        background-color: #005585;
+        color: #fff;
       }
-      form div input, select{
-          width: 95%;
-      }
-      nav li a {
-              font-size: .8rem;
-    
-          }
-        }
-        @media (max-width: 370px) {
-          nav li a {
-              font-size: .7rem;
-          }
-          .title, h4 {
-              font-size:  .9rem;
-            text-align: center;
-          }
-          form {
-              padding: 0;
-              margin: 20px auto;
-          }
-  
-        }
+        
+}
+
+@media (max-width: 390px) {
+    .title, h4 {
+        margin-top: 10px;
+      text-align: center;
+    }
+form {
+    padding: 0;
+    margin: 0;
+}
+form div input, select{
+    width: 95%;
+}
+nav li a {
+        font-size: .7rem;
+    }
+  }
+  @media (max-width: 370px) {
+    nav li a {
+        font-size: .7rem;
+    }
+    .title, h4 {
+        font-size:  .9rem;
+      text-align: center;
+    }
+    form {
+        padding: 0;
+        margin: 20px auto;
+    }
+
+  }
