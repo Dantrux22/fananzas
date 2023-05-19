@@ -280,4 +280,10 @@ input[type="button"]:hover {
     margin: 0 -50px;
     }
     }
-    
+    @media (min-width: 375px) {
+        nav li a {
+            font-size: .7rem;
+
+        }
+
+    }
