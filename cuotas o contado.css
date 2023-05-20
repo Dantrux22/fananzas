@@ -178,7 +178,7 @@ input[type="button"]:hover {
         }
     
         nav li a {
-            font-size: 100%;
+            font-size: 1rem;
         }
     
         form {
@@ -239,7 +239,12 @@ input[type="button"]:hover {
             font-size: 18px;
         }
     }
-    
+    @media (max-width: 414px) {
+        nav li a {
+            font-size: .9rem;
+        }
+
+    }
     @media (max-width: 530px) {
         /* Estilos adicionales para pantallas pequeñas */
 
@@ -287,7 +292,7 @@ input[type="button"]:hover {
           text-align: center;
         }
         nav li a {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
   
     form {
@@ -302,7 +307,7 @@ input[type="button"]:hover {
   
         }
       }
-      @media (max-width: 370px) {
+      @media (max-width: 375px) {
         nav li a {
             font-size: .7rem;
         }
